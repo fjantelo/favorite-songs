@@ -17,3 +17,11 @@ Content-Type: application/json
   "artist": "Michael Jackson",
   "year": 1983
 }
+
+### Patch
+PATCH http://localhost:3000/songs/4.json
+Content-Type: application/json
+
+{
+  "title": "Despacito ft. Daddy Yankee"
+}
