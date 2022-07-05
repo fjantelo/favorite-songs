@@ -14,4 +14,14 @@ class SongsController < ApplicationController
     song.delete
     render json: { message: "Song was deleted." }
   end
+
+  def create
+    song = Song.create(
+      title: params["title"],
+      album: params["album"],
+      artist: params["artist"],
+      year: params["year"],
+    )
+    render json: song.as_json
+  end
 end

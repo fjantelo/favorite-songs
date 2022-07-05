@@ -6,3 +6,14 @@ GET http://localhost:3000/songs/1.json
 
 ### Delete
 DELETE http://localhost:3000/songs/1.json
+
+### Create
+POST http://localhost:3000/songs.json
+Content-Type: application/json
+
+{
+  "title": "Billie Jean",
+  "album": "Thriller",
+  "artist": "Michael Jackson",
+  "year": 1983
+}
